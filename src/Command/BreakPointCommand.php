@@ -3,6 +3,7 @@
 declare (strict_types=1);
 namespace Rector\Jack\Command;
 
+use DateTimeImmutable;
 use Jack202606\Entropy\Console\Contract\CommandInterface;
 use Jack202606\Entropy\Console\Enum\ExitCode;
 use Jack202606\Entropy\Console\Output\OutputPrinter;
@@ -49,7 +50,7 @@ final class BreakPointCommand implements CommandInterface
             return ExitCode::SUCCESS;
         }
         $composerJsonFilePath = \getcwd() . '/composer.json';
-        $now = new \DateTimeImmutable();
+        $now = new DateTimeImmutable();
         $outdatedComposer = $this->outdatedComposerFactory->createOutdatedComposer(\array_filter($responseJson[ComposerKey::INSTALLED_KEY], static function (array $package) use($ignore, $minDays, $now) : bool {
             foreach ($ignore as $ignoredPackage) {
                 if (\strpos((string) $package['name'], $ignoredPackage) !== \false) {
@@ -59,11 +60,8 @@ final class BreakPointCommand implements CommandInterface
             if ($minDays === 0) {
                 return \true;
             }
-            $pageAgeInDays = (new \DateTimeImmutable($package['latest-release-date']))->diff($now)->days;
-            if ($pageAgeInDays < $minDays) {
-                return \false;
-            }
-            return \true;
+            $pageAgeInDays = (new DateTimeImmutable($package['latest-release-date']))->diff($now)->days;
+            return $pageAgeInDays >= $minDays;
         }), $composerJsonFilePath);
         if ($outdatedComposer->count() === 0) {
             $this->outputPrinter->greenBackground('All packages are up to date');

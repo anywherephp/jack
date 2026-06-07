@@ -178,6 +178,7 @@ class ComposerStaticInitf904271979cdf5c3f972ad5ce410f61d
         'Jack202606\\Symfony\\Component\\Process\\Process' => __DIR__ . '/..' . '/symfony/process/Process.php',
         'Jack202606\\Symfony\\Component\\Process\\ProcessUtils' => __DIR__ . '/..' . '/symfony/process/ProcessUtils.php',
         'Rector\\Jack\\Command\\BreakPointCommand' => __DIR__ . '/../..' . '/src/Command/BreakPointCommand.php',
+        'Rector\\Jack\\Command\\ListCommand' => __DIR__ . '/../..' . '/src/Command/ListCommand.php',
         'Rector\\Jack\\Command\\OpenVersionsCommand' => __DIR__ . '/../..' . '/src/Command/OpenVersionsCommand.php',
         'Rector\\Jack\\Command\\RaiseToInstalledCommand' => __DIR__ . '/../..' . '/src/Command/RaiseToInstalledCommand.php',
         'Rector\\Jack\\ComposerProcessor\\OpenVersionsComposerProcessor' => __DIR__ . '/../..' . '/src/ComposerProcessor/OpenVersionsComposerProcessor.php',

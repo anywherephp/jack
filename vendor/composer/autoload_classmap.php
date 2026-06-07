@@ -132,6 +132,7 @@ return array(
     'Jack202606\\Symfony\\Component\\Process\\Process' => $vendorDir . '/symfony/process/Process.php',
     'Jack202606\\Symfony\\Component\\Process\\ProcessUtils' => $vendorDir . '/symfony/process/ProcessUtils.php',
     'Rector\\Jack\\Command\\BreakPointCommand' => $baseDir . '/src/Command/BreakPointCommand.php',
+    'Rector\\Jack\\Command\\ListCommand' => $baseDir . '/src/Command/ListCommand.php',
     'Rector\\Jack\\Command\\OpenVersionsCommand' => $baseDir . '/src/Command/OpenVersionsCommand.php',
     'Rector\\Jack\\Command\\RaiseToInstalledCommand' => $baseDir . '/src/Command/RaiseToInstalledCommand.php',
     'Rector\\Jack\\ComposerProcessor\\OpenVersionsComposerProcessor' => $baseDir . '/src/ComposerProcessor/OpenVersionsComposerProcessor.php',
