@@ -87,12 +87,12 @@
             "source": {
                 "type": "git",
                 "url": "https:\/\/github.com\/TomasVotruba\/entropy.git",
-                "reference": "be1cef187e38640806a2e20fb094480dfa31fc39"
+                "reference": "58f4dc8178f0f3d532a81ad147d337bf5594c8a7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https:\/\/api.github.com\/repos\/TomasVotruba\/entropy\/zipball\/be1cef187e38640806a2e20fb094480dfa31fc39",
-                "reference": "be1cef187e38640806a2e20fb094480dfa31fc39",
+                "url": "https:\/\/api.github.com\/repos\/TomasVotruba\/entropy\/zipball\/58f4dc8178f0f3d532a81ad147d337bf5594c8a7",
+                "reference": "58f4dc8178f0f3d532a81ad147d337bf5594c8a7",
                 "shasum": ""
             },
             "require": {
@@ -116,7 +116,7 @@
                 "tomasvotruba\/unused-public": "^2.2",
                 "tracy\/tracy": "^2.12"
             },
-            "time": "2026-06-06T09:32:39+00:00",
+            "time": "2026-06-10T09:59:59+00:00",
             "default-branch": true,
             "type": "library",
             "installation-source": "dist",
