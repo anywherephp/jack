@@ -29,6 +29,6 @@ if (!function_exists('humbug_phpscoper_expose_class')) {
         }
     }
 }
-humbug_phpscoper_expose_class('ComposerAutoloaderInitf904271979cdf5c3f972ad5ce410f61d', 'Jack202606\ComposerAutoloaderInitf904271979cdf5c3f972ad5ce410f61d');
+humbug_phpscoper_expose_class('ComposerAutoloaderIniteda674306ce41d78f8cac09a1e46fc5f', 'Jack202606\ComposerAutoloaderIniteda674306ce41d78f8cac09a1e46fc5f');
 
 return $loader;
